@@ -12,7 +12,6 @@ body{
     min-height: 100vh;
     background-color: #232228;
     position: relative;
-    transform: ;
 }
 
 
@@ -225,4 +224,45 @@ section.produtos{
     font-size: clamp(1em, 1.8vw, 1.6em);
     font-weight: bold;
     
+}
+
+/* footer */
+
+footer{
+
+    height: 100px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-logo{
+    display: flex;
+    justify-content: center;
+    width: 25vw;
+    color: #fff;
+    font-size: clamp(0.5em, 0.8vw, 1.5em);
+    margin-left: 30px;
+}
+.developed{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 25vw;
+    color: #fff;
+    font-size: clamp(0.3em, 0.3vw, 1.6em);
+}
+.developed > h1{
+    position: absolute;
+    bottom: -45px;
+}
+.suporte{
+    width: 25vw;
+    color: #fff;
+    font-size: clamp(0.5em, 0.8vw, 1.5em);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
