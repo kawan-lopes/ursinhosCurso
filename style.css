@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-family: poppins;
+    scroll-behavior: smooth;
+}
+body{
+    overflow-x: hidden;
+    width: 100vw;
+    min-height: 100vh;
+    background-color: #232228;
+    position: relative;
+    transform: ;
+}
+
+
+/* header */
+
+header{
+    position: relative;
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+div.logo{
+    position: absolute;
+    left: 25px;
+}
+h1.logo{
+    font-size: clamp(0.6em, 1vw, 1em);
+    color: #fff;
+    font-weight: 300;
+}
+nav.header{
+    position: absolute;
+    right: 5%;
+}
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+li#header-active{
+    background-color: #fff;
+    color: black;
+}
+li{
+    color: #fff;
+    font-weight: 400;
+    padding: 0 20px;
+    font-size: clamp(0.6em, 1vw, 1em);
+    border-radius: 5px;
+    
+}
+li:hover{
+    cursor: pointer;
+    background-color: #fff;
+    color: black;
+    box-shadow: -5px -5px 50px 0px rgba(255, 255, 255, 0.3);
+}
+
+/* main */
+
+main{
+    min-height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+.apresentacao{
+    height: 90vh;
+    width: 100vw;
+}
+.apresentacao-row{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.apresentacao-texto{
+    width: 20vw;
+    height: 34vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    margin-left: 30px;
+    margin-top: 20vh;
+    text-align: center;
+}
+p.bemvindo{
+    font-size: clamp(0.8em, 1.5vw, 1.5em);
+
+}
+h1.bemvindo{
+    font-size: clamp(1.7em, 2.5vw, 2.5em);
+}
+.apresentacao-direita{
+    position: relative;
+    height: 100%;
+    width: 50%;
+    right: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+div.balao-desconto{
+    position: absolute;
+    left: -16vw;
+    top: -10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10% 6%;
+    background-color: #FC185A;
+    border-radius: 50px 50px 0px 50px;
+    box-shadow: -5px -5px 80px 10px rgba(252, 24, 90, 0.3);
+    color: #fff;
+}
+.texto-desconto{
+    font-size: clamp(0.8em, 1.5vw, 2em);
+}
+p.balao-desconto{
+    font-size: clamp(0.6em, 1vw, 1em);
+}
+div.icon-cart{
+    width: 3vw;
+    position: absolute;
+    bottom: -2vh;
+    left: -5vw;
+    background: #05E591;
+    padding: 3% 4%;
+    box-shadow: -13px 8px 100px rgba(5, 229, 145, 0.6);
+    border-radius: 30px 0px 30px 30px;
+}
+img.icon-cart{
+    width: 100%;
+    height: 100%;
+}
+.apresentacao-img{
+    position: relative;
+    width: 62vh;
+    top: -5vh;
+    
+}
+img.apresentacao{
+    height: 100%;
+    width: 100%;
+}
+
+div.ir-produtos{
+    position: absolute;
+    top: 76vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+div.ir-produtos > a{
+    text-decoration: none;
+    padding: 8px 30px;
+    border-radius: 40px;
+    background: #B29778;
+    box-shadow: -5px -5px 80px 10px rgba(178, 151, 120, 0.50);
+    border-radius: 15px;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+/* produtos */
+
+
+section.produtos{
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+.container{
+    max-width: 60vw;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: row;
+
+}
+.card-produto{
+    height: 280px;
+    background-color: #fff;
+    margin: 15px 9px;
+    padding: 10px;
+    border-radius: 25px;
+    box-shadow: 0px 0px 100px rgba(255, 255, 255, 0.3);
+    text-align: center;
+}
+.card-produto:hover{
+    cursor: pointer;
+}
+.img-card{
+    width: 200px;
+}
+.img-card > img{
+    width: 100%;
+}
+.pd-nome{
+    font-size: clamp(0.9em, 1.5vw, 1.5em);
+    font-weight: 200;
+}
+.preco{
+    color: #9e8568;
+    font-size: clamp(1em, 1.8vw, 1.6em);
+    font-weight: bold;
+}
